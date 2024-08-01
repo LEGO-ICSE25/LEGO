@@ -1,0 +1,9 @@
+API number:8
+SDK_dataset\pyfibaro\fibaro_device.DeviceModel.read_devices
+SDK_dataset\pyfibaro\fibaro_room.RoomModel.read_rooms
+SDK_dataset\pyfibaro\fibaro_client.FibaroClient.connect
+SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_rooms
+SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_info
+SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_devices
+SDK_dataset\pyfibaro\fibaro_scene.SceneModel.read_scenes
+SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_scenes

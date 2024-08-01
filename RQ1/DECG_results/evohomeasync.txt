@@ -1,0 +1,14 @@
+API number:13
+SDK_dataset\evohomeasync\base.EvohomeClient.set_zone_auto
+SDK_dataset\evohomeasync\base.EvohomeClient.get_zone_modes
+SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_on
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_dayoff
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_custom
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_auto
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_heatingoff
+SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_off
+SDK_dataset\evohomeasync\base.EvohomeClient.get_temperatures
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_eco
+SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_auto
+SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_away
+SDK_dataset\evohomeasync\base.EvohomeClient.set_temperature

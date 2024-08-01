@@ -9,17 +9,17 @@ Prerequisites:
 * Python >= 3.8
 
 Project structure:
-* AID: source codes of AID
+* DECG: source codes of DECG
 * pycg: source codes of PyCG
 * SDK_dataset: dataset of 45 SDKs
 * micro-benchmark: 123 Python programs of 18 categories
 * RQ1-2: evaluation of RQ1 and RQ2
 * RQ3: evaluation of RQ3
 
-AID usage:
+DECG usage:
 
 ```bash
-$ python AID/__main__.py [module_path1 module_path2 module_path3...] [-o output_path]
+$ python DECG/__main__.py [module_path1 module_path2 module_path3...] [-o output_path]
 # [module_path1, module_path2, ...] represents a list of paths to Python files, which can include any number of paths.
 # The generated call relations are stored in a JSON file at the path specified by output_path.
 ```
@@ -27,7 +27,7 @@ $ python AID/__main__.py [module_path1 module_path2 module_path3...] [-o output_
 *Example :* analyze SDK_dataset/broadlink/light.py.
 
 ```bash
-$ python AID/__main__.py SDK_dataset/broadlink/light.py -o cg.json
+$ python DECG/__main__.py SDK_dataset/broadlink/light.py -o cg.json
 ```
 
 The identified SDK APIs are printed out:

@@ -1,0 +1,19 @@
+API number:18
+SDK_dataset\bond_async\bond.Bond.bond_type
+SDK_dataset\bond_async\bond.Bond.set_bluelight_brightness
+SDK_dataset\bond_async\bond.Bond.group
+SDK_dataset\bond_async\bond.Bond.devices
+SDK_dataset\bond_async\bond.Bond.device
+SDK_dataset\bond_async\bond.Bond.token
+SDK_dataset\bond_async\bond.Bond.supports_groups
+SDK_dataset\bond_async\bond.Bond.bridge
+SDK_dataset\bond_async\bond.Bond.action
+SDK_dataset\bond_async\bond.Bond.group_state
+SDK_dataset\bond_async\bond.Bond.device_properties
+SDK_dataset\bond_async\bond.Bond.groups
+SDK_dataset\bond_async\bond.Bond.group_skeds
+SDK_dataset\bond_async\bond.Bond.device_state
+SDK_dataset\bond_async\bond.Bond.device_skeds
+SDK_dataset\bond_async\bond.Bond.group_properties
+SDK_dataset\bond_async\bond.Bond.group_action
+SDK_dataset\bond_async\bond.Bond.version

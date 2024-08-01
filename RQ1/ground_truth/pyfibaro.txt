@@ -1,0 +1,8 @@
+Control APIs:
+1.SDK_dataset\pyfibaro\fibaro_client.FibaroClient.connect
+
+Status query APIs:
+1.SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_info
+2.SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_rooms
+3.SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_scenes
+4.SDK_dataset\pyfibaro\fibaro_client.FibaroClient.read_devices

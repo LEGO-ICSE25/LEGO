@@ -1,0 +1,21 @@
+Control APIs:
+1.SDK_dataset\bond_async\bond.Bond.set_bluelight_brightness
+
+Status query APIs:
+1.SDK_dataset\bond_async\bond.Bond.bridge
+2.SDK_dataset\bond_async\bond.Bond.devices
+3.SDK_dataset\bond_async\bond.Bond.group_skeds
+4.SDK_dataset\bond_async\bond.Bond.bond_type
+5.SDK_dataset\bond_async\bond.Bond.groups
+6.SDK_dataset\bond_async\bond.Bond.device_properties
+7.SDK_dataset\bond_async\bond.Bond.group_state
+8.SDK_dataset\bond_async\bond.Bond.group
+9.SDK_dataset\bond_async\bond.Bond.action
+10.SDK_dataset\bond_async\bond.Bond.device
+11.SDK_dataset\bond_async\bond.Bond.token
+12.SDK_dataset\bond_async\bond.Bond.supports_groups
+13.SDK_dataset\bond_async\bond.Bond.device_skeds
+14.SDK_dataset\bond_async\bond.Bond.group_properties
+15.SDK_dataset\bond_async\bond.Bond.group_action
+16.SDK_dataset\bond_async\bond.Bond.device_state
+17.SDK_dataset\bond_async\bond.Bond.version

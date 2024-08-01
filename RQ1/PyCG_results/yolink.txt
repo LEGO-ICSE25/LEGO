@@ -1,0 +1,13 @@
+Control APIs:
+1.SDK_dataset\yolink\home_manager.YoLinkHome.async_setup
+2.SDK_dataset\yolink\home_manager.YoLinkHome.async_unload
+3.SDK_dataset\yolink\home_manager.YoLinkHome.async_get_home_info
+4.SDK_dataset\yolink\home_manager.YoLinkHome.async_load_home_devices
+
+Status query APIs:
+1.SDK_dataset\yolink\device.YoLinkDevice.get_state
+2.SDK_dataset\yolink\device.YoLinkDevice.fetch_state
+3.SDK_dataset\yolink\device.YoLinkDevice.get_external_data
+4.SDK_dataset\yolink\device.YoLinkDevice.call_device
+5.SDK_dataset\yolink\device.YoLinkDevice.get_paired_device_id
+

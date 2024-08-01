@@ -1,0 +1,17 @@
+Control APIs:
+1.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_auto
+2.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_away
+3.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_custom
+4.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_dayoff
+5.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_eco
+6.SDK_dataset\evohomeasync\base.EvohomeClient.set_mode_heatingoff
+7.SDK_dataset\evohomeasync\base.EvohomeClient.set_temperature
+8.SDK_dataset\evohomeasync\base.EvohomeClient.set_zone_auto
+9.SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_on
+10.SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_off
+11.SDK_dataset\evohomeasync\base.EvohomeClient.set_dhw_auto
+
+Status query APIs:
+1.SDK_dataset\evohomeasync\base.EvohomeClient.get_temperatures
+2.SDK_dataset\evohomeasync\base.EvohomeClient.get_zone_modes
+

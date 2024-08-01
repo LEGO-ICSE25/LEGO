@@ -1,0 +1,7 @@
+API number:6
+SDK_dataset\asyncsleepiq\bed.SleepIQBed.valid
+SDK_dataset\asyncsleepiq\asyncsleepiq.AsyncSleepIQ.fetch_bed_statuses
+SDK_dataset\asyncsleepiq\asyncsleepiq.AsyncSleepIQ.init_beds
+SDK_dataset\asyncsleepiq\bed.SleepIQBed.fetch_pause_mode
+SDK_dataset\asyncsleepiq\bed.SleepIQBed.set_pause_mode
+SDK_dataset\asyncsleepiq\bed.SleepIQBed.stop_pump

@@ -1,0 +1,11 @@
+Control APIs:
+1.SDK_dataset\asyncsleepiq\asyncsleepiq.AsyncSleepIQ.fetch_bed_statuses
+2.SDK_dataset\asyncsleepiq\asyncsleepiq.AsyncSleepIQ.init_beds
+3.SDK_dataset\asyncsleepiq\bed.SleepIQBed.valid
+4.SDK_dataset\asyncsleepiq\bed.SleepIQBed.calibrate
+5.SDK_dataset\asyncsleepiq\bed.SleepIQBed.stop_pump
+6.SDK_dataset\asyncsleepiq\bed.SleepIQBed.fetch_pause_mode
+7.SDK_dataset\asyncsleepiq\bed.SleepIQBed.set_pause_mode
+
+Status query APIs:
+

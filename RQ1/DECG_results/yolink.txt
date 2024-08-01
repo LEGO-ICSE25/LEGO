@@ -1,0 +1,7 @@
+API number:6
+SDK_dataset\yolink\device.YoLinkDevice.get_state
+SDK_dataset\yolink\home_manager.YoLinkHome.async_setup
+SDK_dataset\yolink\device.YoLinkDevice.fetch_state
+SDK_dataset\yolink\home_manager.YoLinkHome.async_load_home_devices
+SDK_dataset\yolink\device.YoLinkDevice.call_device
+SDK_dataset\yolink\home_manager.YoLinkHome.async_get_home_info
