@@ -1,0 +1,73 @@
+active_time:
+{'Type': 'Read', 'active_time': None}
+
+fan_level:
+{'Type': 'Read', 'fan_level': None}
+
+filter_life:
+{'Type': 'Read', 'filter_life': None}
+
+air_quality:
+{
+    "Type": "Read",
+    "air_quality": None
+}
+
+screen_status:
+{'Type': 'Read', 'screen_status': None}
+
+toggle_display:
+{'Type': 'Write', 'screen_status': 'status'}
+
+turn_on:
+{
+    "Type": "Write",
+    "device_status": "on"
+}
+
+turn_off:
+{'Type': 'Write', 'device_status': 'off'}
+
+change_fan_speed:
+{
+    "Type": "Write",
+    "level": "speed"
+}
+
+mode_toggle:
+{'Type': 'Write', 'mode': 'value', 'level': 'value/None'}
+
+turn_on_display:
+{'Type': 'Write', 'Display': 'on'}
+
+turn_off_display:
+{'Type': 'Write', 'display_status': 'off'}
+
+auto_mode:
+{'Type': 'Write', 'mode': 'auto'}
+
+manual_mode:
+{'Type': 'Write', 'mode': 'manual'}
+
+sleep_mode:
+{'Type': 'Write', 'mode': 'sleep'}
+
+get_details:
+{
+    "Type": "Write",
+    "device_status": "r.get('deviceStatus', 'unknown')",
+    "connection_status": "r.get('connectionStatus', 'unknown')",
+    "active_time": "r.get('activeTime', 0)",
+    "filter_life": "r.get('filterLife', {})",
+    "screen_status": "r.get('screenStatus', 'unknown')",
+    "mode": "r.get('mode', self.mode)",
+    "level": "r.get('level', 0)",
+    "air_quality": "r.get('airQuality', 'unknown')"
+}
+
+update:
+{
+    "Type": "Write",
+    "None": None
+}
+

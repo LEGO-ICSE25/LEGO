@@ -1,7 +1,7 @@
 # LEGO
-LEGO: Automatic API Identification for Understanding and Using IoT Device SDKs
+LEGO: Synthesizing IoT Device Components based on Static Analysis and Large Language Models
 
-This repository is dedicated to sharing the tool AID and the data for the ISSTA 2024 paper entitled AID: Automatic API Identification for Understanding and Using IoT Device SDKs.
+This repository is dedicated to sharing the experiment results and the data for the ICSE 2025 paper entitled LEGO: Synthesizing IoT Device Components based on Static Analysis and Large Language Models.
 
 ## Getting LEGO to run
 

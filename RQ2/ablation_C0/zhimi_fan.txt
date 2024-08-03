@@ -1,0 +1,15 @@
+power:
+{'Type': 'Read', 'power': None}
+
+is_on:
+{'Type': 'Read', 'power': None}
+
+humidity:
+{'Type': 'Read', 'humidity': None}
+
+set_power:
+{'Type': 'Write', 'power': 'power'}
+
+status:
+{'Type': 'Read', 'FanStatus': None}
+

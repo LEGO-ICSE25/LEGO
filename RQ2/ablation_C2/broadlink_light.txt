@@ -1,0 +1,6 @@
+set_state:
+{'Type': 'Write', 'pwr': 'bool', 'red': 'int', 'blue': 'int', 'green': 'int', 'brightness': 'int', 'colortemp': 'int', 'hue': 'int', 'saturation': 'int', 'transitionduration': 'int', 'maxworktime': 'int', 'bulb_colormode': 'int', 'bulb_scenes': 'str', 'bulb_scene': 'str'}
+
+get_state:
+{'Type': 'Read', 'red': None, 'blue': None, 'green': None, 'pwr': None, 'brightness': None, 'colortemp': None, 'hue': None, 'saturation': None, 'transitionduration': None, 'maxworktime': None, 'bulb_colormode': None, 'bulb_scenes': None, 'bulb_scene': None}
+

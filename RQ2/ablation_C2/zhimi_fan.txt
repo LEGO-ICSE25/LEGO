@@ -1,0 +1,124 @@
+power:
+{'Type': 'Read', 'power': None}
+
+is_on:
+{'Type': 'Read', 'power': None}
+
+humidity:
+{'Type': 'Read', 'humidity': None}
+
+temperature:
+{'Type': 'Read', 'temperature': None}
+
+led:
+{'Type': 'Read', 'led': None}
+
+led_brightness:
+{'Type': 'Read', 'led_brightness': None}
+
+buzzer:
+{'Type': 'Read', 'buzzer': None}
+
+child_lock:
+{'Type': 'Read', 'child_lock': None}
+
+natural_speed:
+{'Type': 'Read', 'natural_speed': None}
+
+direct_speed:
+{'Type': 'Read', 'speed level': None}
+
+oscillate:
+{'Type': 'Read', 'angle_enable': None}
+
+battery:
+{'Type': 'Read', 'battery': None}
+
+battery_charge:
+{'Type': 'Read', 'bat_charge': None}
+
+battery_state:
+{'Type': 'Read', 'bat_state': None}
+
+ac_power:
+{'Type': 'Read', 'ac_power': None}
+
+delay_off_countdown:
+{'Type': 'Read', 'poweroff_time': 'None'}
+
+speed:
+{'Type': 'Read', 'speed': None}
+
+angle:
+{'Type': 'Read', 'angle': None}
+
+use_time:
+{'Type': 'Read', 'use_time': None}
+
+button_pressed:
+{'Type': 'Read', 'button_pressed': 'None'}
+
+on:
+{'Type': 'Write', 'power': 'on'}
+
+off:
+{'Type': 'Write', 'power': 'off'}
+
+set_natural_speed:
+{'Type': 'Write', 'natural_speed': 'speed'}
+
+set_direct_speed:
+{'Type': 'Write', 'speed': 'speed'}
+
+set_rotate:
+{'Type': 'Write', 'angle': 'direction'}
+
+set_angle:
+{'Type': 'Write', 'angle': 'int'}
+
+set_oscillate:
+{'Type': 'Write', 'oscillate': 'bool'}
+
+set_led_brightness:
+{'Type': 'Write', 'LedBrightness': 'brightness.value'}
+
+set_led:
+{'Type': 'Write', 'led': 'bool'}
+
+set_led:
+{'Type': 'Write', 'buzzer': 'bool'}
+
+set_child_lock:
+{'Type': 'Write', 'lock': 'bool'}
+
+delay_off:
+{'Type': 'Write', 'delay_off seconds': 'seconds'}
+
+set_power:
+{'Type': 'Write', 'power': 'bool'}
+
+status:
+```json
+{
+  "power": "power",
+  "humidity": "humidity",
+  "temperature": "temp_dec",
+  "led": "led",
+  "led_brightness": "led_b",
+  "buzzer": "buzzer",
+  "child_lock": "child_lock",
+  "natural_speed": "natural_level",
+  "direct_speed": "speed_level",
+  "oscillate": "angle_enable",
+  "battery": "battery",
+  "battery_charge": "bat_charge",
+  "battery_state": "bat_state",
+  "ac_power": "ac_power",
+  "delay_off_countdown": "poweroff_time",
+  "speed": "speed",
+  "angle": "angle",
+  "use_time": "use_time",
+  "button_pressed": "button_pressed"
+}
+```
+

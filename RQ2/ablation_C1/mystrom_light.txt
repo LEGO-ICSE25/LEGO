@@ -1,0 +1,94 @@
+get_state:
+{'Type': 'Read',
+ 'consumption': None,
+ 'firmware': None,
+ 'color': None,
+ 'mode': None,
+ 'transition_time': None,
+ 'state': None,
+ 'bulb_type': None}
+
+firmware:
+{'Type': 'Read',
+ 'firmware': None}
+
+mac:
+{'Type': 'Read',
+ 'mac_address': None}
+
+consumption:
+{'Type': 'Read',
+ 'consumption': None,
+ 'firmware': None}
+
+color:
+{'Type': 'Read',
+ 'color': None}
+
+mode:
+{'Type': 'Read',
+ 'mode': None}
+
+transition_time:
+{'Type': 'Read',
+ 'transition_time': None}
+
+bulb_type:
+{'Type': 'Read',
+ 'bulb_type': None}
+
+state:
+{'Type': 'Read',
+ 'state': None}
+
+set_on:
+{'Type': 'Write',
+ 'state': 'on'}
+
+set_color_hex:
+{'Type': 'Write',
+ 'state': 'on',
+ 'color': 'value'}
+
+set_color_hsv:
+{
+  "Type": "Write",
+  "state": "on",
+  "color": "hue;saturation;value"
+}
+
+set_transition_time:
+{'Type': 'Write',
+ 'transition_time': 'value'}
+
+set_off:
+{'Type': 'Write',
+ 'state': 'off'}
+
+set_white:
+{
+    "Type": "Write",
+    "state": "on",
+    "color": "0;0;100"
+}
+
+set_rainbow:
+{
+    "Type": "Write",
+    "state": "on",
+    "color": "hue;saturation;value"
+}
+
+set_sunrise:
+{
+    "Type": "Write",
+    "transition_time": "duration"
+}
+
+set_flashing:
+{'Type': 'Write',
+ 'state': 'on',
+ 'color': 'hue1;saturation1;value1',
+ 'color': 'hue2;saturation2;value2',
+ 'transition_time': '100'}
+

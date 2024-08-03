@@ -1,0 +1,67 @@
+humidity:
+{'Type': 'Read', 'humidity': None}
+
+pm25:
+{'Type': 'Read', 'pm25': None}
+
+pm10:
+{'Type': 'Read', 'pm10': 'None'}
+
+temperature:
+{'Type': 'Read', 'temperature': None}
+
+co2:
+{'Type': 'Read', 'co2': None}
+
+battery:
+{
+    'Type': 'Read',
+    'battery': None
+}
+
+charging_state:
+{'Type': 'Read', 'charging_state': None}
+
+monitoring_frequency:
+{'Type': 'Read', 'monitoring_frequency': None}
+
+screen_off:
+{'Type': 'Read', 'screen_off': None}
+
+device_off:
+{'Type': 'Read', 'device_off': None}
+
+display_temperature_unit:
+{'Type': 'Read', 'temperature_unit': None}
+
+set_monitoring_frequency_duration:
+{'Type': 'Write', 'monitoring_frequency': 'duration'}
+
+set_device_off_duration:
+{'Type': 'Write', 'device_off': 'duration'}
+
+set_screen_off_duration:
+{'Type': 'Write', 'screen_off': 'duration'}
+
+set_display_temperature_unit:
+{
+    "Type": "Write",
+    "temperature_unit": "unit.value"
+}
+
+status:
+{
+    "Type": "Read",
+    "humidity": None,
+    "pm25": None,
+    "pm10": None,
+    "temperature": None,
+    "co2": None,
+    "battery": None,
+    "charging_state": None,
+    "monitoring_frequency": None,
+    "screen_off": None,
+    "device_off": None,
+    "temperature_unit": None
+}
+

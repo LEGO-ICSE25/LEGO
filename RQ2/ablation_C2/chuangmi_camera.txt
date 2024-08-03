@@ -1,0 +1,124 @@
+power:
+{'Type': 'Read', 'power': None}
+
+motion_record:
+{'Type': 'Read', 'motion_record': None}
+
+light:
+{'Type': 'Read', 'light': None}
+
+full_color:
+{'Type': 'Read', 'full_color': None}
+
+flip:
+{'Type': 'Read',
+ 'flip': None}
+
+improve_program:
+{'Type': 'Read', 'improve_program': None}
+
+wdr:
+{'Type': 'Read', 'Wide dynamic range': None}
+
+track:
+{'Type': 'Read', 'track': None}
+
+watermark:
+{'Type': 'Read', 'watermark': None}
+
+sdcard_status:
+{'Type': 'Read', 'sdcard_status': None}
+
+max_client:
+{'Type': 'Read', 'max_client': None}
+
+night_mode:
+{'Type': 'Read', 'night_mode': None}
+
+mini_level:
+{'Type': 'Read', 'mini_level': None}
+
+on:
+{'Type': 'Write', 'power_status': 'on'}
+
+off:
+{
+    "Type": "Write",
+    "Power": "off"
+}
+
+motion_record_on:
+{'Type': 'Write', 'motion_record': 'on'}
+
+motion_record_off:
+{'Type': 'Write', 'motion_record': 'off'}
+
+motion_record_stop:
+{'Type': 'Write', 'MotionRecord': 'stop'}
+
+light_on:
+{'Type': 'Write', 'light_status': 'on'}
+
+light_off:
+{'Type': 'Write', 'status': 'off'}
+
+full_color_on:
+{'Type': 'Write', 'Full Color': 'on'}
+
+full_color_off:
+{
+    "Type": "Write",
+    "full_color": "off"
+}
+
+flip_on:
+{'Type': 'Write', 'flip': 'on'}
+
+flip_off:
+{'Type': 'Write', 'image_flip': 'off'}
+
+improve_program_on:
+{'Type': 'Write', 'improve_program': 'on'}
+
+improve_program_off:
+{'Type': 'Write', 'improve_program': 'off'}
+
+watermark_on:
+{'Type': 'Write', 'watermark': 'on'}
+
+watermark_off:
+{'Type': 'Write', 'watermark': 'off'}
+
+wdr_on:
+{'Type': 'Write', 'WDR': 'on'}
+
+wdr_off:
+{'Type': 'Write', 'Wide Dynamic Range': 'off'}
+
+night_mode_auto:
+{'Type': 'Write', 'night_mode': '0'}
+
+night_mode_off:
+{'Type': 'Write', 'night_mode': '1'}
+
+night_mode_on:
+{'Type': 'Write', 'night_mode': 2}
+
+status:
+{
+    "Type": "Read",
+    "power": null,
+    "motion_record": null,
+    "light": null,
+    "full_color": null,
+    "flip": null,
+    "improve_program": null,
+    "wdr": null,
+    "track": null,
+    "sdcard_status": null,
+    "watermark": null,
+    "max_client": null,
+    "night_mode": null,
+    "mini_level": null
+}
+

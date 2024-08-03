@@ -1,0 +1,188 @@
+on:
+{'Type': 'Write',
+ 'power': 'on',
+ 'transition': 'transition',
+ 'mode': 'mode'}
+
+off:
+{'Type': 'Write',
+ 'power': 'off',
+ 'transition': 'transition',
+ 'mode': None}
+
+set_brightness:
+{'Type': 'Write',
+ 'brightness': 'level',
+ 'transition': 'transition'}
+
+set_color_temperature:
+{
+    'Type': 'Write',
+    'color_temperature': 'level',
+    'transition': 'transition'
+}
+
+set_rgb_int:
+{'Type': 'Write',
+ 'color': 'rgb'}
+
+set_hsv:
+{'Type': 'Write',
+ 'color': 'hsv'}
+
+set_developer_mode:
+{'Type': 'Write',
+ 'developer_mode': 'enable'}
+
+set_save_state_on_change:
+{
+    'Type': 'Write',
+    'cfg_save_state': 'enable'
+}
+
+set_name:
+{'Type': 'Write',
+ 'name': 'name'}
+
+toggle:
+{'Type': 'Write',
+ 'power': 'toggle',
+ 'transition': 'transition',
+ 'mode': None}
+
+set_default:
+{'Type': 'Write',
+ 'power': 'set_default',
+ 'transition': None,
+ 'mode': None}
+
+is_on:
+{'Type': 'Read', 
+ 'power': None}
+
+brightness:
+{'Type': 'Read',
+ 'brightness': None}
+
+rgb:
+{
+    'Type': 'Read',
+    'color': None
+}
+
+rgb_int:
+{
+    "Type": "Read",
+    "color": "rgb"
+}
+
+color_mode:
+{
+    "Type": "Read",
+    "mode": null
+}
+
+hsv:
+{
+    "Type": "Read",
+    "color": None
+}
+
+color_temp:
+{
+    "Type": "Read",
+    "color_temperature": None
+}
+
+color_flowing:
+{
+    "Type": "Read",
+    "flowing": "None"
+}
+
+color_flow_params:
+{'Type': 'Read',
+ 'flow_params': None}
+
+developer_mode:
+{
+    "Type": "Read",
+    "developer_mode": None
+}
+
+save_state_on_change:
+{'Type': 'Write',
+ 'cfg_save_state': 'save_state'}
+
+name:
+{'Type': 'Read', 
+ 'name': None}
+
+delay_off:
+{'Type': 'Read',
+ 'delay': None}
+
+music_mode:
+{'Type': 'Read',
+ 'music_on': None}
+
+moonlight_mode:
+{'Type': 'Read', 'moonlight_mode': None}
+
+moonlight_mode_brightness:
+{
+    "Type": "Read",
+    "brightness": None
+}
+
+status:
+{
+  "Type": "Read",
+  "power": null,
+  "bright": null,
+  "color_mode": null,
+  "rgb": null,
+  "hue": null,
+  "sat": null,
+  "ct": null,
+  "flowing": null,
+  "flow_params": null,
+  "bg_power": null,
+  "bg_bright": null,
+  "bg_lmode": null,
+  "bg_rgb": null,
+  "bg_hue": null,
+  "bg_sat": null,
+  "bg_ct": null,
+  "bg_flowing": null,
+  "bg_flow_params": null,
+  "name": null,
+  "lan_ctrl": null,
+  "save_state": null,
+  "delayoff": null,
+  "music_on": null,
+  "active_mode": null,
+  "nl_br": null
+}
+
+set_power:
+{
+    "Type": "Write",
+    "power": "on",
+    "transition": "transition",
+    "mode": "mode"
+}
+
+set_color_temp:
+{
+    'Type': 'Write',
+    'color_temperature': 'level',
+    'transition': 'transition'
+}
+
+set_rgb:
+{
+    "Type": "Write",
+    "color": "rgb"
+}
+

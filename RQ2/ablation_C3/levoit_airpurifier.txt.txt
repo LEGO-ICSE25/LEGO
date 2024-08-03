@@ -1,0 +1,103 @@
+get_details:
+{'device_status': 'deviceStatus', 'connection_status': 'connectionStatus', 'active_time': 'activeTime', 'filter_life': 'filterLife', 'screen_status': 'screenStatus', 'mode': 'mode', 'level': 'level', 'air_quality': 'airQuality'}
+
+active_time:
+{'Type': 'Read', 'active_time': 'activeTime'}
+
+fan_level:
+{'Type': 'Read', 'level': None}
+
+filter_life:
+{
+    "Type": "Read",
+    "filter_life": "filterLife"
+}
+
+air_quality:
+{
+    "Type": "Read",
+    "air_quality": None
+}
+
+screen_status:
+{
+    "Type": "Read",
+    "screen_status": None
+}
+
+toggle_display:
+{
+    "Type": "Write",
+    "screen_status": "status"
+}
+
+turn_on:
+{
+    "Type": "Write",
+    "device_status": "status"
+}
+
+turn_off:
+{
+    "Type": "Write",
+    "device_status": "off"
+}
+
+change_fan_speed:
+{
+    "Type": "Write",
+    "level": "speed"
+}
+
+mode_toggle:
+{
+    "Type": "Write",
+    "mode": "mode",
+    "level": "level"
+}
+
+turn_on_display:
+{
+    "Type": "Write",
+    "screen_status": "on"
+}
+
+turn_off_display:
+{
+    "Type": "Write",
+    "screen_status": "off"
+}
+
+auto_mode:
+{
+    "Type": "Write",
+    "mode": "auto"
+}
+
+manual_mode:
+{
+    "Type": "Write",
+    "mode": "manual",
+    "level": 1
+}
+
+sleep_mode:
+{
+    "Type": "Write",
+    "mode": "sleep",
+    "level": 1
+}
+
+update:
+{
+    "Type": "Read",
+    "device_status": "deviceStatus",
+    "connection_status": "connectionStatus",
+    "active_time": "activeTime",
+    "filter_life": "filterLife",
+    "screen_status": "screenStatus",
+    "mode": "mode",
+    "level": "level",
+    "air_quality": "airQuality"
+}
+

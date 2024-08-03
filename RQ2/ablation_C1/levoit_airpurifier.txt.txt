@@ -1,0 +1,78 @@
+get_details:
+{'Type': 'Write', 'device_status': None, 'connection_status': None, 'active_time': None, 'filter_life': 'uuid', 'screen_status': None, 'mode': 'uuid', 'level': 'uuid', 'air_quality': None}
+
+active_time:
+{'Type': 'Read', 'active_time': None}
+
+fan_level:
+{'Type': 'Read', 'level': None}
+
+filter_life:
+{'Type': 'Read', 'filter_life': None}
+
+air_quality:
+{'Type': 'Read', 'air_quality': None}
+
+screen_status:
+{'Type': 'Read', 'screen_status': None}
+
+toggle_display:
+{'Type': 'Write', 'device_status': 'status', 'screen_status': 'status', 'filter_life': None, 'mode': None, 'level': None, 'air_quality': None, 'connection_status': None, 'active_time': None}
+
+turn_on:
+{
+  "Type": "Write",
+  "device_status": "status",
+  "connection_status": null,
+  "active_time": null,
+  "filter_life": "uuid",
+  "screen_status": "status",
+  "mode": "uuid",
+  "level": "uuid",
+  "air_quality": null
+}
+
+turn_off:
+{
+    "Type": "Write",
+    "device_status": "status"
+}
+
+change_fan_speed:
+{
+    "Type": "Write",
+    "level": "speed"
+}
+
+mode_toggle:
+{
+    "Type": "Write",
+    "mode": "mode",
+    "level": "level"
+}
+
+turn_on_display:
+{
+    "Type": "Write",
+    "screen_status": "on"
+}
+
+turn_off_display:
+{'Type': 'Write', 'screen_status': 'off'}
+
+auto_mode:
+{'Type': 'Write', 'mode': 'auto'}
+
+manual_mode:
+{
+    "Type": "Write",
+    "mode": "manual"
+}
+
+sleep_mode:
+{'Type': 'Write',
+ 'mode': 'sleep'}
+
+update:
+{'Type': 'Write', 'device_status': None, 'connection_status': None, 'active_time': None, 'filter_life': None, 'screen_status': None, 'mode': None, 'level': None, 'air_quality': None}
+

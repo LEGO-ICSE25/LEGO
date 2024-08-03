@@ -1,0 +1,103 @@
+on:
+{'Type': 'Write', 'mode': 'mode', 'transition': 'transition'}
+
+off:
+{'Type': 'Write', 'power_state': 'off', 'effect': 'smooth', 'duration': 'transition/None'}
+
+set_brightness:
+{'Type': 'Write', 'brightness': 'level'}
+
+set_color_temperature:
+{
+    "Type": "Write",
+    "color_temperature": "level",
+    "transition": "transition"
+}
+
+set_rgb_int:
+{'Type': 'Write', 'rgb': 'rgb'}
+
+set_hsv:
+{'Type': 'Write', 'color': 'hsv'}
+
+set_developer_mode:
+{'Type': 'Write', 'developer_mode': 'enable'}
+
+set_save_state_on_change:
+{'Type': 'Write', 'cfg_save_state': 'enable'}
+
+set_name:
+{'Type': 'Write', 'name': 'name'}
+
+toggle:
+{'Type': 'Write', 'state': None}
+
+set_default:
+{'Type': 'Write', 'current_state': 'None'}
+
+is_on:
+{'Type': 'Read', 'power': None}
+
+brightness:
+{'Type': 'Read', 'brightness': None}
+
+rgb:
+{'Type': 'Read', 'rgb': None}
+
+rgb_int:
+{'Type': 'Read', 'rgb_int': None}
+
+color_mode:
+{'Type': 'Read', 'color_mode': None}
+
+hsv:
+{'Type': 'Read',
+ 'hue': 'hue',
+ 'sat': 'sat',
+ 'brightness': 'bright'}
+
+color_temp:
+{'Type': 'Read', 'color_temperature': None}
+
+color_flowing:
+{'Type': 'Read', 'flowing': None}
+
+color_flow_params:
+{'Type': 'Read', 'color_flow_params': None}
+
+developer_mode:
+{'Type': 'Read', 'lan_ctrl': None}
+
+save_state_on_change:
+{'Type': 'Read', 'save_state': None}
+
+name:
+{'Type': 'Read', 'name': None}
+
+delay_off:
+{'Type': 'Read', 'delay': None}
+
+music_mode:
+{'Type': 'Read', 'music_mode': None}
+
+moonlight_mode:
+{'Type': 'Read', 'active_mode': None}
+
+moonlight_mode_brightness:
+{'Type': 'Read', 'nl_br': None}
+
+status:
+{'Type': 'Read', 'name': None, 'lan_ctrl': None, 'save_state': None, 'delayoff': None, 'music_on': None, 'power': None, 'bright': None, 'color_mode': None, 'rgb': None, 'hue': None, 'sat': None, 'ct': None, 'flowing': None, 'flow_params': None, 'active_mode': None, 'nl_br': None, 'bg_power': None, 'bg_bright': None, 'bg_lmode': None, 'bg_rgb': None, 'bg_hue': None, 'bg_sat': None, 'bg_ct': None, 'bg_flowing': None, 'bg_flow_params': None}
+
+set_power:
+{
+    "Type": "Write",
+    "Power": "on"
+}
+
+set_color_temp:
+{'Type': 'Write', 'color_temperature': 'level', 'transition': 'None'}
+
+set_rgb:
+{'Type': 'Write', 'color': 'rgb'}
+

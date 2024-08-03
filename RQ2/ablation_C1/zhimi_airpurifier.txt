@@ -1,0 +1,201 @@
+is_on:
+{'Type': 'Read', 'power': None}
+
+power:
+{
+    'Type': 'Read',
+    'power': None
+}
+
+aqi:
+{'Type': 'Read',
+ 'aqi': None}
+
+mode:
+{'Type': 'Read',
+ 'mode': None}
+
+buzzer:
+{'Type': 'Read',
+ 'buzzer': 'buzzer'}
+
+child_lock:
+{'Type': 'Read', 'child_lock': None}
+
+filter_life_remaining:
+{'Type': 'Read', 'filter_life_remaining': None}
+
+filter_hours_used:
+{'Type': 'Read',
+ 'filter_hours_used': None}
+
+motor_speed:
+{'Type': 'Read',
+ 'motor_speed': None}
+
+favorite_rpm:
+{'Type': 'Read',
+ 'favorite_rpm': None}
+
+average_aqi:
+{'Type': 'Read',
+ 'average_aqi': None}
+
+humidity:
+{'Type': 'Read',
+ 'humidity': None}
+
+tvoc:
+{'Type': 'Read', 'tvoc': None}
+
+temperature:
+{'Type': 'Read',
+ 'temperature': None}
+
+pm10_density:
+{'Type': 'Read',
+ 'pm10_density': None}
+
+fan_level:
+{'Type': 'Read',
+ 'fan_level': None}
+
+led:
+{'Type': 'Read', 'led': None}
+
+led_brightness:
+{'Type': 'Read', 'led_brightness': None}
+
+buzzer_volume:
+{
+    'Type': 'Read',
+    'buzzer_volume': None
+}
+
+favorite_level:
+{'Type': 'Read',
+ 'favorite_level': None}
+
+use_time:
+{'Type': 'Read',
+ 'use_time': None}
+
+purify_volume:
+{'Type': 'Read',
+ 'purify_volume': None}
+
+filter_rfid_product_id:
+{'Type': 'Read', 'filter_rfid_product_id': None}
+
+filter_rfid_tag:
+{'Type': 'Read', 'filter_rfid_tag': None}
+
+filter_type:
+{
+    'Type': 'Read',
+    'filter_type': None
+}
+
+led_brightness_level:
+{'Type': 'Read',
+ 'led_brightness_level': None}
+
+anion:
+{'Type': 'Read',
+ 'anion': None}
+
+filter_left_time:
+{'Type': 'Read',
+ 'filter_left_time': None}
+
+gestures:
+{'Type': 'Read', 'gestures': None}
+
+on:
+{'Type': 'Write', 'power': 'True'}
+
+off:
+{'Type': 'Write', 'power': 'False'}
+
+set_favorite_rpm:
+{
+    'Type': 'Write',
+    'favorite_rpm': 'rpm'
+}
+
+set_mode:
+{'Type': 'Write', 'mode': 'mode'}
+
+set_anion:
+{'Type': 'Write',
+ 'anion': 'anion'}
+
+set_buzzer:
+{
+    'Type': 'Write',
+    'buzzer': 'buzzer'
+}
+
+set_gestures:
+{'Type': 'Write', 'gestures': 'gestures'}
+
+set_child_lock:
+{'Type': 'Write', 'child_lock': 'lock'}
+
+set_fan_level:
+{
+    'Type': 'Write',
+    'fan_level': 'level'
+}
+
+set_volume:
+{
+    'Type': 'Write',
+    'buzzer_volume': 'volume'
+}
+
+set_favorite_level:
+{'Type': 'Write', 'favorite_level': 'level'}
+
+set_led_brightness:
+{'Type': 'Write', 'led_brightness': 'brightness'}
+
+set_led:
+{'Type': 'Write', 'led': 'led'}
+
+set_led_brightness_level:
+{
+  "Type": "Write",
+  "led_brightness_level": "level"
+}
+
+status:
+{'Type': 'Read',
+ 'power': None,
+ 'mode': None,
+ 'buzzer': 'buzzer',
+ 'child_lock': None,
+ 'filter_life_remaining': None,
+ 'filter_hours_used': None,
+ 'motor_speed': None,
+ 'favorite_rpm': None,
+ 'average_aqi': None,
+ 'humidity': None,
+ 'tvoc': None,
+ 'temperature': None,
+ 'pm10_density': None,
+ 'fan_level': None,
+ 'led': None,
+ 'led_brightness': None,
+ 'buzzer_volume': None,
+ 'favorite_level': None,
+ 'use_time': None,
+ 'purify_volume': None,
+ 'filter_rfid_product_id': None,
+ 'filter_rfid_tag': None,
+ 'filter_type': None,
+ 'led_brightness_level': None,
+ 'anion': None,
+ 'filter_left_time': None,
+ 'gestures': None}
+

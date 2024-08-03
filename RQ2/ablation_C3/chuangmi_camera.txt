@@ -1,0 +1,205 @@
+power:
+{'Type': 'Read',
+ 'power': None}
+
+motion_record:
+{'Type': 'Read',
+ 'motion_record': 'None'}
+
+light:
+{
+    'Type': 'Read',
+    'power': None,
+    'motion_record': None,
+    'light': None
+}
+
+full_color:
+{
+    'Type': 'Read',
+    'full_color': 'None'
+}
+
+flip:
+{
+    'Type': 'Read',
+    'flip': 'None'
+}
+
+improve_program:
+{
+    'Type': 'Read',
+    'power': None,
+    'motion_record': None
+}
+
+wdr:
+{
+    'Type': 'Read',
+    'wdr': None
+}
+
+track:
+{'Type': 'Read',
+ 'track': None}
+
+watermark:
+{
+    'Type': 'Read',
+    'watermark': None
+}
+
+sdcard_status:
+{
+    'Type': 'Read',
+    'sdcard_status': None
+}
+
+max_client:
+{
+    'Type': 'Read',
+    'max_client': None
+}
+
+night_mode:
+{'Type': 'Read',
+ 'night_mode': None}
+
+mini_level:
+{
+    'Type': 'Read',
+    'mini_level': None
+}
+
+on:
+{
+    "Type": "Write",
+    "power": "on"
+}
+
+off:
+{
+    'Type': 'Write',
+    'power': 'off'
+}
+
+motion_record_on:
+{
+    'Type': 'Write',
+    'motion_record': 'on'
+}
+
+motion_record_off:
+{'Type': 'Write',
+ 'motion_record': 'off'}
+
+motion_record_stop:
+{
+    'Type': 'Write',
+    'motion_record': 'stop'
+}
+
+light_on:
+{
+    "Type": "Write",
+    "light": "on"
+}
+
+light_off:
+{'Type': 'Write',
+ 'light': 'off'}
+
+full_color_on:
+{
+    "Type": "Write",
+    "full_color": "on"
+}
+
+full_color_off:
+{
+    "Type": "Write",
+    "full_color": "off"
+}
+
+flip_on:
+{
+    "Type": "Write",
+    "flip": "on"
+}
+
+flip_off:
+{
+    'Type': 'Write',
+    'flip': 'off'
+}
+
+improve_program_on:
+{
+    "Type": "Write",
+    "improve_program": "on"
+}
+
+improve_program_off:
+{
+    'Type': 'Write',
+    'improve_program': 'off'
+}
+
+watermark_on:
+{'Type': 'Write',
+ 'watermark': 'on'}
+
+watermark_off:
+{
+    'Type': 'Write',
+    'watermark': 'off'
+}
+
+wdr_on:
+{
+    "Type": "Write",
+    "wdr": "on"
+}
+
+wdr_off:
+{
+    "Type": "Write",
+    "wdr": "off"
+}
+
+night_mode_auto:
+{
+    "Type": "Write",
+    "night_mode": "auto"
+}
+
+night_mode_off:
+{
+    "Type": "Write",
+    "night_mode": "off"
+}
+
+night_mode_on:
+{
+    "Type": "Write",
+    "night_mode": "on"
+}
+
+status:
+{
+    "Type": "Read",
+    "power": None,
+    "motion_record": None,
+    "light": None,
+    "full_color": None,
+    "flip": None,
+    "improve_program": None,
+    "wdr": None,
+    "track": None,
+    "sdcard_status": None,
+    "watermark": None,
+    "max_client": None,
+    "night_mode": None,
+    "mini_level": None
+}
+

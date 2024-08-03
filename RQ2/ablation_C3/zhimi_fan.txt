@@ -1,0 +1,178 @@
+power:
+{'Type': 'Read', 'power': None}
+
+is_on:
+{'Type': 'Read', 'power': None}
+
+humidity:
+{
+    'Type': 'Read',
+   'humidity': None
+}
+
+temperature:
+{
+    'Type': 'Read',
+    'temperature': None
+}
+
+led:
+{
+    'Type': 'Read',
+    'led': None
+}
+
+led_brightness:
+{
+    'Type': 'Read',
+    'led_brightness': None
+}
+
+buzzer:
+{'Type': 'Read', 'buzzer': None}
+
+child_lock:
+{
+    "Type": "Read",
+    "child_lock": null
+}
+
+natural_speed:
+{'Type': 'Read', 'natural_level': None}
+
+direct_speed:
+{'Type': 'Read', 'speed_level': None}
+
+oscillate:
+{'Type': 'Read', 'angle_enable': None}
+
+battery:
+{
+    "Type": "Read",
+    "battery": None
+}
+
+battery_charge:
+{'Type': 'Read', 'battery': 'bat_charge'}
+
+battery_state:
+{
+    "Type": "Read",
+    "battery": "bat_state"
+}
+
+ac_power:
+{'Type': 'Read', 'ac_power': None}
+
+ac_power:
+{
+    "Type": "Read",
+    "poweroff_time": None
+}
+
+ac_power:
+{
+    "Type": "Read",
+    "speed": null
+}
+
+angle:
+{'Type': 'Read', 'angle': None}
+
+use_time:
+{'Type': 'Read', 'use_time': None}
+
+button_pressed:
+{'Type': 'Read', 'button_pressed': None}
+
+on:
+{'Type': 'Write', 'power': 'on'}
+
+off:
+{'Type': 'Write', 'power': 'off'}
+
+set_natural_speed:
+{
+    "Type": "Write",
+    "natural_level": "speed"
+}
+
+set_direct_speed:
+{
+    "Type": "Write",
+    "speed_level": "speed"
+}
+
+set_rotate:
+{
+    "Type": "Write",
+    "angle_enable": "direction"
+}
+
+set_angle:
+{
+    "Type": "Write",
+    "angle": "angle"
+}
+
+set_oscillate:
+
+{
+    "Type": "Write",
+    "angle_enable": "oscillate"
+}
+
+set_led_brightness:
+{'Type': 'Write', 'led_brightness': 'brightness'}
+
+set_led:
+{
+    "Type": "Write",
+    "led": "led"
+}
+
+set_buzzer:
+{
+    "Type": "Write",
+    "buzzer": "buzzer"
+}
+
+set_child_lock:
+{'Type': 'Write', 'child_lock': 'lock'}
+
+delay_off:
+{
+    "Type": "Write",
+    "poweroff_time": "seconds"
+}
+
+set_power:
+{
+    "Type": "Write",
+    "power": "power"
+}
+
+status:
+{
+    "Type": "Read",
+    "power": null,
+    "humidity": null,
+    "temperature": null,
+    "led": null,
+    "led_brightness": null,
+    "buzzer": null,
+    "child_lock": null,
+    "natural_level": null,
+    "speed_level": null,
+    "angle_enable": null,
+    "battery": null,
+    "bat_charge": "battery_charge",
+    "bat_state": "battery_state",
+    "ac_power": null,
+    "poweroff_time": null,
+    "speed": null,
+    "angle": null,
+    "use_time": null,
+    "button_pressed": null
+}
+

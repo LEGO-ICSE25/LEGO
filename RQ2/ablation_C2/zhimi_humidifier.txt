@@ -1,0 +1,112 @@
+is_on:
+{'Type': 'Read', 'power': None'}
+
+power:
+{'Type': 'Read', 'is_on': None}
+
+error:
+{'Type': 'Read', 'error': None}
+
+mode:
+{'Type': 'Read', 'mode': None}
+
+target_humidity:
+{'Type': 'Read', 'target_humidity': None}
+
+water_level:
+{'Type': 'Read', 'water_level': None}
+
+water_tank_detached:
+{'Type': 'Read', 'water_level': None}
+
+dry:
+{'Type': 'Read', 'dry': None}
+
+use_time:
+{'Type': 'Read', 'use_time': None}
+
+button_pressed:
+{'Type': 'Read', 'button_pressed': 'None'}
+
+motor_speed:
+{'Type': 'Read', 'speed_level': None}
+
+humidity:
+{'Type': 'Read', 'humidity': None}
+
+temperature:
+{'Type': 'Read', 'temperature': None}
+
+fahrenheit:
+{'Type': 'Read', 'fahrenheit': None}
+
+buzzer:
+{'Type': 'Read', 'buzzer': None}
+
+led_brightness:
+{'Type': 'Read', 'led_brightness': None}
+
+child_lock:
+{'Type': 'Read', 'child_lock': None}
+
+actual_speed:
+{'Type': 'Read', 'actual_speed': None}
+
+power_time:
+{'Type': 'Read', 'power_time': None}
+
+clean_mode:
+{'Type': 'Read', 'clean_mode': None}
+
+on:
+{'Type': 'Write', 'power': 'True'}
+
+off:
+{'Type': 'Write', 'power': 'False'}
+
+set_speed:
+{'Type': 'Write', 'speed_level': 'rpm'}
+
+set_target_humidity:
+{'Type': 'Write', 'target_humidity': 'humidity'}
+
+set_mode:
+{'Type': 'Write', 'mode': 'OperationMode.value'}
+
+set_led_brightness:
+{'Type': 'Write', 'led_brightness': 'brightness.value'}
+
+set_buzzer:
+{'Type': 'Write', 'buzzer': 'buzzer'}
+
+set_child_lock:
+{'Type': 'Write', 'child_lock': 'lock'}
+
+set_dry:
+{'Type': 'Write', 'dry': 'dry'}
+
+set_clean_mode:
+{'Type': 'Write', 'clean_mode': 'clean_mode'}
+
+status:
+{
+  "power": null,
+  "fault": null,
+  "mode": null,
+  "target_humidity": null,
+  "water_level": null,
+  "dry": null,
+  "use_time": null,
+  "button_pressed": null,
+  "speed_level": null,
+  "humidity": null,
+  "temperature": null,
+  "fahrenheit": null,
+  "buzzer": null,
+  "led_brightness": null,
+  "child_lock": null,
+  "actual_speed": null,
+  "power_time": null,
+  "clean_mode": null
+}
+

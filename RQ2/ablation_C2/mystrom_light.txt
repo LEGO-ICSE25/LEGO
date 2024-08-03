@@ -1,0 +1,64 @@
+get_state:
+{'Type': 'Read',
+ 'consumption': None,
+ 'firmware': None,
+ 'color': None,
+ 'mode': None,
+ 'transition_time': None,
+ 'state': None,
+ 'bulb_type': None}
+
+firmware:
+{'Type': 'Read', 'firmware': None}
+
+mac:
+{'Type': 'Read', 'MAC address': None}
+
+consumption:
+{'Type': 'Read', 'consumption': None}
+
+color:
+{'Type': 'Read', 'color': None}
+
+mode:
+{'Type': 'Read', 'mode': None}
+
+transition_time:
+{
+    "Type": "Read",
+    "transition_time": "None"
+}
+
+bulb_type:
+{'Type': 'Read', 'bulb_type': None}
+
+state:
+{'Type': 'Read', 'state': None}
+
+set_on:
+{'Type': 'Write', 'action': 'on'}
+
+set_color_hex:
+{'Type': 'Write', 'color': 'value'}
+
+set_color_hsv:
+{'Type': 'Write', 'hue': 'hue parameter', 'saturation': 'saturation parameter', 'value': 'value parameter'}
+
+set_transition_time:
+{'Type': 'Write', 'transition_time': 'value'}
+
+set_off:
+{'Type': 'Write', 'action': 'off'}
+
+set_white:
+{'Type': 'Write', 'hue': '0', 'saturation': '0', 'value': '100'}
+
+set_rainbow:
+{'Type': 'Write', 'hue': 'duration', 'saturation': 'duration', 'value': 'duration'}
+
+set_sunrise:
+{'Type': 'Write', 'transition_time': 'duration/max_brightness'}
+
+set_flashing:
+{'Type': 'Write', 'hue': 'hsv1[0]/hsv2[0]', 'saturation': 'hsv1[1]/hsv2[1]', 'value': 'hsv1[2]/hsv2[2]', 'ramp': '100'}
+

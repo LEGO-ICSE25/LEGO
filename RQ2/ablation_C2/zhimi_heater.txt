@@ -1,0 +1,60 @@
+power:
+{'Type': 'Read', 'power': None}
+
+is_on:
+{'Type': 'Read', 'power': None}
+
+target_temperature:
+{'Type': 'Read', 'target_temperature': None}
+
+delay_off_countdown:
+{'Type': 'Read', 'countdown_time': None}
+
+temperature:
+{'Type': 'Read', 'temperature': None}
+
+relative_humidity:
+{'Type': 'Read', 'relative_humidity': None}
+
+child_lock:
+{'Type': 'Read', 'child_lock': None}
+
+buzzer:
+{'Type': 'Read', 'buzzer': None}
+
+led_brightness:
+{'Type': 'Read', 'led_brightness': None}
+
+on:
+{'Type': 'Write', 'power': True}
+
+off:
+{'Type': 'Write', 'power': False}
+
+set_target_temperature:
+{'Type': 'Write', 'target_temperature': 'target_temperature'}
+
+set_child_lock:
+{'Type': 'Write', 'child_lock': 'lock'}
+
+set_buzzer:
+{'Type': 'Write', 'buzzer': 'buzzer'}
+
+set_led_brightness:
+{'Type': 'Write', 'led_brightness': 'brightness.value'}
+
+set_delay_off:
+{'Type': 'Write', 'countdown_time': 'seconds'}
+
+status:
+{
+    "Type": "Read",
+    "power": "power",
+    "target_temperature": "target_temperature",
+    "delay_off_countdown": "countdown_time",
+    "temperature": "temperature",
+    "child_lock": "child_lock",
+    "buzzer": "buzzer",
+    "led_brightness": "led_brightness"
+}
+
