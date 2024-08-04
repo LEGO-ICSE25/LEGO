@@ -3,20 +3,34 @@ LEGO: Synthesizing IoT Device Components based on Static Analysis and Large Lang
 
 This repository is dedicated to sharing the experiment results and the data for the ICSE 2025 paper entitled LEGO: Synthesizing IoT Device Components based on Static Analysis and Large Language Models.
 
-## Getting LEGO to run
+Project structure:
+* DECG: source codes of our proposed dataflow-enhanced call graph (DECG)
+* pycg: source codes of PyCG
+* SDK_dataset: dataset of 50 SDKs used in RQ1
+* RQ1: evaluation of RQ1
+* RQ2: evaluation of RQ2
+* RQ3: evaluation of RQ3
+
+
+## DECG 
+
+We constructs the DECG for a given device SDK to capture both explicit call relations and implicit dependencies between functions. 
+
+The construction of DECG is based on an Identifier Assignment Graph (IAG) that records the points-to relations between identifiers.
+We list the transformation rules omitted in the paper.
+
+![Rules](figures/Rules.png)
+
+
+## Evaluation 
+
+### RQ1 Evaluation
+
 
 Prerequisites:
 * Python >= 3.8
 
-Project structure:
-* DECG: source codes of DECG
-* pycg: source codes of PyCG
-* SDK_dataset: dataset of 45 SDKs
-* micro-benchmark: 123 Python programs of 18 categories
-* RQ1-2: evaluation of RQ1 and RQ2
-* RQ3: evaluation of RQ3
-
-DECG usage:
+Getting DECG to run:
 
 ```bash
 $ python DECG/__main__.py [module_path1 module_path2 module_path3...] [-o output_path]
@@ -30,30 +44,18 @@ $ python DECG/__main__.py [module_path1 module_path2 module_path3...] [-o output
 $ python DECG/__main__.py SDK_dataset/broadlink/light.py -o cg.json
 ```
 
-The identified SDK APIs are printed out:
 
-```
-API number:4
-SDK_dataset\broadlink\light.lb2.set_state
-SDK_dataset\broadlink\light.lb2.get_state
-SDK_dataset\broadlink\light.lb1.get_state
-SDK_dataset\broadlink\light.lb1.set_state
-```
 
-## Evaluation 
-
-### RQ1 and RQ2 Evaluation
-
-Run AID and AID-PyCG to identify APIs from 45 SDKs in **SDK_dataset**.
+Run LEGO and LEGO-CG to identify SDK APIs from 50 SDKs in **SDK_dataset**.
 
 ```bash
 # 1. run the script of testing AID
-$ python RQ1-2/DECG_run.py
+$ python RQ1/DECG_run.py
 # 2. run the script of testing AID-PyCG
-$ python RQ1-2/PyCG_run.py     
+$ python RQ1/PyCG_run.py     
 ```
 
-The output results of AID are stored in **RQ1-2/DECG_results**, and the output results of AID-PyCG are also stored in **RQ1-2/PyCG_results**.
+The output results of AID are stored in **RQ1/DECG_results**, and the output results of AID-PyCG are also stored in **RQ1/PyCG_results**.
 
 The format of the results is as follows:
 ```
@@ -69,7 +71,7 @@ SDK_dataset\aiohue\v2\controllers\lights.LightsController.turn_on
 SDK_dataset\aiohue\v2\__init__.HueBridgeV2.get_diagnostics
 ```
 
-The ground truth of the SDK API is recorded in **RQ1-2/ground_truth**, which includes both control APIs and status query APIs.
+The ground truth of the SDK API is recorded in **RQ1/ground_truth**, which includes both control APIs and status query APIs.
 
 
 ```
@@ -88,36 +90,33 @@ Status query APIs:
 
 The precision and recall of two approaches can be calculated by comparing their identification results with the ground truth.
 
+## RQ2 Evaluation
+
+We design an ablation experiment to evaluate the impact of different contextual information on the accuracy of API understanding and property extraction by the LLM. The experiment involves the following 10 real-world devices.
+
+![Devices](figures/Devices.png)
+
+Our designed prompt comprises augmented information, i.e., contextual information (CTX) and outputs from previous queries (OPQ). **prompt.py** demonstrates an example of our designed information-enhanced prompt.
+
+We design four variations of the prompt (C0 to C3) to conduct an ablation study.The results are as follows:
+
+![RQ2](figures/RQ2.png)
+
+The output results of the LLM using each set of prompts are documented separately in **RQ2/ablation_C0, RQ2/ablation_C1, RQ2/ablation_C2, RQ2/ablation_C3**.
 
 ### RQ3 Evaluation
 
-Run 18 categories of programs in **micro-benchmark** to evaluate the accuracy of call graph generation.
+We conducted an experiment with eight developers to evaluate the efficiency improvement of developing device components with LEGO.
+We divide the developers into two groups.
+The first group uses LEGO for component development, while the second group develops components manually.
+We evaluate the effectiveness of LEGO in three aspects:
+(a) the average development time for each device component
+of the two groups, (b) the usability of the developed device
+components, and (c) the recall of device properties. 
 
-It is important to note that except for testing the category *dataflows*, the testing of the other 17 categories requires commenting out lines 256-258 in **AID\AID.py**, i.e., the following code:
+The results are as follows:
 
-```
-dataflow.get_all_methods()
-dataflow.get_assign()
-dataflow.get_return()
-```
+![RQ2](figures/RQ3.png)
 
-*Example1:* test 4 programs in category *dataflows*.
+**RQ3/deviceComponent** presents several examples of device components synthesized using LEGO for KubeEdge.
 
-```bash
-$ python RQ3/dataflows_test.py     
-```
-
-*Example2:* test 6 programs in category *args*.
-
-```bash
-$ python RQ3/args_test.py     
-```
-
-
-The accuracy results of DECG and PyCG are printed out in the following format:
-
-```bash
-Testing: micro-benchmark\dataflows\new
-DECG Accuracy: 4/4
-PyCG Accuracy: 0/4
-```

@@ -64,13 +64,13 @@ battery_state:
 ac_power:
 {'Type': 'Read', 'ac_power': None}
 
-ac_power:
+delay_off_countdown:
 {
     "Type": "Read",
     "poweroff_time": None
 }
 
-ac_power:
+speed:
 {
     "Type": "Read",
     "speed": null

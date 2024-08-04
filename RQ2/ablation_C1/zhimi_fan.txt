@@ -58,13 +58,13 @@ ac_power:
   "power": null
 }
 
-ac_power:
+delay_off_countdown:
 {
   "Type": "Read",
   "poweroff_time": null
 }
 
-ac_power:
+speed:
 {'Type': 'Read', 'speed': None}
 
 angle:
