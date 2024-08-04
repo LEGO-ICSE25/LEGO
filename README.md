@@ -49,13 +49,13 @@ $ python DECG/__main__.py SDK_dataset/broadlink/light.py -o cg.json
 Run LEGO and LEGO-CG to identify SDK APIs from 50 SDKs in **SDK_dataset**.
 
 ```bash
-# 1. run the script of testing AID
+# 1. run the script of testing LEGO
 $ python RQ1/DECG_run.py
-# 2. run the script of testing AID-PyCG
+# 2. run the script of testing LEGO-CG
 $ python RQ1/PyCG_run.py     
 ```
 
-The output results of AID are stored in **RQ1/DECG_results**, and the output results of AID-PyCG are also stored in **RQ1/PyCG_results**.
+The output results of LEGO are stored in **RQ1/DECG_results**, and the output results of LEGO-CG are also stored in **RQ1/PyCG_results**.
 
 The format of the results is as follows:
 ```
